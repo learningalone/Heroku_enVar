@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/estilo.css" />
+
+  <title>Bases de datos</title>
+</head>
+
+<body id="cuerpo">
+
+    <nav>
+        <a href="#" id="create">Agregar</a>
+        <a href="#" id="upDate">Actualizar</a>
+        <a href="#" id="delete">Eliminar</a>
+        <a href="#" id="read">Consultar</a>
+        
+    </nav>
+
+  <div class="container" id="contCreate">
+    <form class="contact" id="putForm" action="" method="post">
+      <h3>Taller Base de datos</h3>
+      <h3>UNIVALLE</h3>
+      <h4>Enviar Pacientes</h4>
+      <fieldset>
+        <input placeholder="Nombre Paciente" name="nombre" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Apellido Paciente" name="apellido" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Id Paciente" name="identificacion" type="text" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="putForm-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+
+    </form>
+  </div>
+
+  <div class="container" id="contUpDate">
+    <form class="contact" id="postForm" action="" method="post">
+      <h3>Taller Base de datos</h3>
+      <h3>UNIVALLE</h3>
+      <h4>Actualizar Pacientes</h4>
+      <fieldset>
+        <input placeholder="Nombre Paciente" name="nombre" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Apellido Paciente" name="apellido" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Id Paciente" name="identificacion" type="text" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="postForm-submit" data-submit="...Sending">Actualizar</button>
+      </fieldset>
+
+    </form>
+  </div>
+
+  <div class="container" id="contDelete">
+    <form class="contact" id="deleteForm" action="" method="delete">
+      <h3>Taller Base de datos</h3>
+      <h3>UNIVALLE</h3>
+      <h4>Eliminar Pacientes</h4>
+      <fieldset>
+        <input placeholder="Id Paciente" name="identificacion" type="text" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="deleteForm-submit" data-submit="...Sending">Delete</button>
+      </fieldset>
+
+    </form>
+  </div>
+
+  <div class="container" id="contRead">
+    <form class="contact" id="getForm" action="" method="get">
+      <h3>Taller Base de datos</h3>
+      <h3>UNIVALLE</h3>
+      <h4>Consultar Pacientes</h4>
+      <fieldset>
+        <button name="submit" type="submit" id="getForm-submit" data-submit="...Sending">Consultar</button>
+      </fieldset>
+
+    </form>
+  </div>
+
+  <div id="tablaPacientes">
+  </div>
+  
+<script src="app.js"></script>
+</body>
+
+</html>
